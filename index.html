@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <i class="fa-solid fa-shop"></i>
+        Trang chủ
+    </div>
+    <div class="content">
+        <div class="sidebar">
+            <div class="statusBox">
+                <ul class="status__list">
+                    <li class="status__item status__item--active">
+                        <i class="fa-solid fa-circle-dot"></i>
+                        <p>Thông tin cơ bản</p>
+                    </li>
+                    <li class="status__item">
+                        <i class="fa-solid fa-circle-dot"></i>
+                        <p>Thông tin bán hàng</p>
+                    </li>
+                    <li class="status__item">
+                        <i class="fa-solid fa-circle-dot"></i>
+                        <p>Thông tin khác</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="guideText">
+                <h2>
+                    <p>Hướng dẫn</p>
+                    <i class="fa-regular fa-lightbulb"></i>
+                </h2>
+                <p>Thông tin chi tiết về trang web và các chức năng</p>
+            </div>
+        </div>
+
+        <div class="content_container">
+            <div class="content__part">
+                <h2>Thông tin cơ bản</h2>
+                <ul class="info__list">
+                    <li class="info__item">
+                        <p>Link hình ảnh sản phẩm</p>
+                        <div class="info__images">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </div>
+                    </li>
+                    <li class="info__item">
+                        <p>Tên sản phẩm</p>
+                        <input type="text">
+                    </li>
+                    <li class="info__item">
+                        <p>Phân loại</p>
+                        <input type="text">
+                    </li>
+                    <li class="info__item">
+                        <p>Mô tả sản phẩm</p>
+                        <input type="text">
+                    </li>
+
+                </ul>
+            </div>
+            <div class="content__part">
+                <h2>Thông tin bán hàng</h2>
+                <ul class="info__list">
+                    <li class="info__item">
+                        <p>Giá</p>
+                        <input type="text">
+                    </li>
+                    <li class="info__item">
+                        <p>Kho hàng</p>
+                        <input type="text">
+                    </li>
+                </ul>
+
+            </div>
+            <div class="saver__container">
+                <button class="cancel">Hủy</button>
+                <button class="saveHide">Lưu và ẩn</button>
+                <button class="saveShow">Lưu và hiển thị</button>
+            </div>        
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

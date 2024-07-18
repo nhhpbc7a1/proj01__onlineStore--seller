@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary-color: #80bb35;
+    --text-color: #ffffff;
+    --main-side-padding: 100px;
+    --orange-color: #fe4c05;
+    --black: #000;
+    --border-color: #ddd;
+    --border: 0.5px solid var(--border-color);
+    --text-gray-color: rgb(137, 137, 152);
+    --border-radius: 3px;
+    --box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(204, 204, 204, 0.3);
+    /* height: 1000px; */
+}
+
+.header {
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 1;
+
+    font-size: 24px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.header i{
+    color: var(--orange-color);
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    padding: 10px 50px;
+    position: absolute; 
+    top: 50px;
+}
+
+.sidebar {
+    width: 18%;
+}
+
+.statusBox {
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    color: var(--text-gray-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.status__list {
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+}
+
+.status__item {
+    padding: 10px;
+    display: flex;
+}
+
+.status__item > p {
+    margin-left: 10px;
+}
+
+.status__item--active > p {
+    color: var(--black);
+    font-weight: 600;
+}
+
+.status__item--active > i {
+    color: var(--orange-color);
+}
+
+.guideText {
+    margin-top: 14px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+.guideText::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 20px;
+    border-radius: var(--border-radius);
+    background-color: rgb(0, 0, 255);
+    position: absolute;
+    top: -4px;
+    left: 0;
+    z-index: -1;
+}
+
+.guideText > h2 {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 255, 0.3);
+    padding: 20px;
+}
+
+.guideText > h2 > p {
+    font-size: 18px;
+}
+
+.guideText > h2 > i {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 50px;
+    color: rgba(128, 128, 128, 0.4);
+    transform: rotate(-10deg);
+}
+
+.guideText > p {
+    padding: 20px;
+    font-size: 14px;
+}
+
+.content_container {
+    margin-left: 14px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.content__part {
+    background-color: #fff;
+    padding: 40px 32px;
+    box-shadow: var(--box-shadow);
+}
+
+.content__part + .content__part  {
+    margin-top: 12px;
+}
+
+.content__part > h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.info__list {
+    list-style: none;
+}
+
+.info__item {
+    display: flex;
+    align-items: center;
+}
+
+.info__item + .info__item {
+    margin-top: 48px;
+    position: relative;
+}
+
+
+.info__item > p{
+    margin-right: 10px;
+    width: 180px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.info__item > .info__images {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.info__item > input {
+    flex: 1;
+    font-size: 16px;
+    padding: 5px;
+    border: var(--border);
+}
+
+.info__item > .info__images > input {
+    font-size: 16px;
+    padding: 5px;
+    border: var(--border);
+    align-self: stretch;
+    width: 100%;
+}
+
+.info__item > .info__images > input + input {
+    margin-top: 10px; 
+}
+
+.saver__container {
+    width: 1007px;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    box-shadow:  0 0 50px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px;
+}
+
+.saver__container button{
+    padding: 8px 24px;
+}
+
+.saver__container button:hover{
+    opacity: 0.8;
+}
+
+.saver__container button + button {
+    margin-left: 24px;
+}
+
+.saver__container .cancel {
+    background-color: rgba(128, 128, 128, 0.1);
+    border: var(--border);
+}
+
+.saver__container .saveHide {
+    background-color: rgba(128, 128, 128, 0.1);
+    color: var(--text-gray-color);
+    border: var(--border);
+}
+
+.saver__container .saveShow {
+    background-color: var(--orange-color);
+    color: var(--text-color);
+    border: var(--border);
+}
