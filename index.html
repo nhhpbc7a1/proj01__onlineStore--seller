@@ -46,15 +46,15 @@
                     <li class="info__item">
                         <p>Link hình ảnh sản phẩm</p>
                         <div class="info__images">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
+                            <input type="text" id="productImage1">
+                            <input type="text" id="productImage2">
+                            <input type="text" id="productImage3">
+                            <input type="text" id="productImage4">
                         </div>
                     </li>
                     <li class="info__item">
                         <p>Tên sản phẩm</p>
-                        <input type="text">
+                        <input type="text"  id="productName">
                     </li>
                     <li class="info__item">
                         <p>Phân loại</p>
@@ -62,7 +62,7 @@
                     </li>
                     <li class="info__item">
                         <p>Mô tả sản phẩm</p>
-                        <input type="text">
+                        <input type="text"  id="productDescribe">
                     </li>
 
                 </ul>
@@ -72,11 +72,11 @@
                 <ul class="info__list">
                     <li class="info__item">
                         <p>Giá</p>
-                        <input type="text">
+                        <input type="text"  id="productPrice">
                     </li>
                     <li class="info__item">
                         <p>Kho hàng</p>
-                        <input type="text">
+                        <input type="text" id="productQuantity">
                     </li>
                 </ul>
 
@@ -84,10 +84,13 @@
             <div class="saver__container">
                 <button class="cancel">Hủy</button>
                 <button class="saveHide">Lưu và ẩn</button>
-                <button class="saveShow">Lưu và hiển thị</button>
+                <button class="saveShow" id="saveShow">Lưu và hiển thị</button>
             </div>        
         </div>
+        <div id="listProducts">
+        </div>    
     </div>
+
     <script src="./main.js"></script>
 </body>
 </html>
